@@ -21,6 +21,10 @@ const getDay = () => {
       break;
     case dayOfTheWeek === 5:
       weekDay = "Friday";
+    case dayOfTheWeek === 6:
+      weekDay = "Saturday";
+    case dayOfTheWeek === 6:
+      weekDay = "Sunday";
     default:
       break;
   }
