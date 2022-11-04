@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Jesse Odenore Portfolio</title>
+    <!-- font awesome  cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header aria-label="header" class="primary-header">
+      <nav class="primary-nav">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html" class="logo-a"
+              ><i class="fa-solid fa-code"></i>ODENZ.<span>DEV</span>
+            </a>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+
+          <button class="btn nav-btn">
+            <a href="contact.html">Contact Me</a>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main aria-label="main page" id="home" class="main-section">
+      <section aria-label="hero" class="hero">
+        <div class="container">
+          <div class="hero-container">
+            <h1 class="hero-title space-xl">
+              <script src="js/date.js" defer></script>
+              Hello, <span>My name is</span> Jesse and I'm here to help you
+              build websites on this fine <span data-date>Tuesday</span>.
+            </h1>
+            <p class="hero-content">
+              Upcoming Full Stack Dev
+            </p>
+            <div class="hero-buttons">
+              <button aria-label="button" class="cta-btn btn">
+                Get Started
+              </button>
+              <button aria-label="button" class="cta-btn btn btn-light">
+                Contact Me
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section aria-label="about" class="about-section" id="about">
+        <div class="container">
+          <div class="split">
+            <script src="js/read.js" defer></script>
+            <div class="about-text">
+              <h2>About Me</h2>
+              <p class="info-p">
+                My name is Jesse and im training to be an full stack developer,
+                While im not coding I enjoy watching and playing basketball,
+                also I enjoy watching cartoons in my free time.
+                <span class="read-more">
+                  Praesentium nostrum soluta rem facere porro harum libero
+                  dolorem deserunt, placeat, quidem provident illo, aliquid
+                  possimus saepe necessitatibus nam laudantium dicta fuga ipsam
+                  inventore. Perspiciatis enim adipisci, eligendi praesentium
+                  eaque hic molestias?
+                </span>
+              </p>
+              <div>
+                <button class="btn read-btn" data-extra>Read more</button>
+              </div>
+            </div>
+            <div class="about-image">
+              <img src="resources/img/odenz1.jpg" alt="Picture of Jesse" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="languages-section">
+        <div class="container">
+          <div class="languages-wrapper">
+            <h2>My Languages</h2>
+            <div class="languages-flex">
+              <i aria-label="html" class="fa-brands fa-html5 i-language"></i>
+              <i aria-label="css" class="fa-brands fa-css3-alt i-language"></i>
+              <i aria-label="python" class="fa-brands fa-python i-language"></i>
+              <i
+                aria-label="javascript"
+                class="fa-brands fa-square-js i-language"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects-split">
+            <article class="projects-card flow-content">
+              <img
+                src="resources/img/lw-basketball.jpg"
+                alt="Two guys playing basketball"
+              />
+              <h3>Prospect Generator</h3>
+              <div class="info">
+                <p>
+                  Generate a ESPN like scout report with my generator! I used
+                  Javascript objects and arrays to generate a randomized string
+                  that explains the skills and stats of a random upcoming star!
+                  Points per game and age are randomized too!
+                </p>
+              </div>
+              <button class="btn project-btn">
+                <a href="https://github.com/jodenore/MixedMessages">See more</a>
+              </button>
+            </article>
+            <article class="projects-card flow-content">
+              <img
+                src="resources/img/cc-card.jpg"
+                alt="Picture of Credit Card"
+              />
+              <h3>Credit Card Checker</h3>
+              <div class="info">
+                <p>
+                  Context: The company that you work for suspects that credit
+                  card distributors have been mailing out cards that have
+                  invalid numbers. In this project, you have the role of a clerk
+                  who checks if credit cards are valid.
+                </p>
+              </div>
+              <button class="btn project-btn">
+                <a href="#">See more</a>
+              </button>
+            </article>
+            <article class="projects-card flow-content">
+              <img
+                src="resources/img/flexbasketball.jpg"
+                alt="Basketball Training"
+              />
+              <h3>Basketball Source</h3>
+              <div class="info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias, totam voluptate obcaecati quos iste quo, nam
+                  consequuntur quis aut quae, repellat at eos non! Sed provident
+                  animi dolores adipisci facere.
+                </p>
+              </div>
+              <button class="btn project-btn">
+                <a href="https://jodenore.github.io/flexbox-business-site/"
+                  >See more</a
+                >
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
