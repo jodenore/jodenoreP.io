@@ -2,7 +2,7 @@ let date = new Date();
 
 const dayOfTheWeek = date.getDay();
 
-// const heroDate = document.querySelector("[data-date]");
+const heroDate = document.querySelector("[data-date]");
 
 const getDay = () => {
   let weekDay;
@@ -34,5 +34,5 @@ const getDay = () => {
   return weekDay;
 };
 
-// heroDate.innerHTML = getDay();
+heroDate.innerHTML = getDay();
 console.log(getDay());
