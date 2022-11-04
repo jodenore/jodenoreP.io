@@ -2,7 +2,7 @@ let date = new Date();
 
 const dayOfTheWeek = date.getDay();
 
-const heroDate = document.querySelector("[data-date]");
+// const heroDate = document.querySelector("[data-date]");
 
 const getDay = () => {
   let weekDay;
@@ -21,14 +21,18 @@ const getDay = () => {
       break;
     case dayOfTheWeek === 5:
       weekDay = "Friday";
+      break;
     case dayOfTheWeek === 6:
       weekDay = "Saturday";
-    case dayOfTheWeek === 6:
+      break;
+    case dayOfTheWeek === 7:
       weekDay = "Sunday";
+      break;
     default:
       break;
   }
   return weekDay;
 };
 
-heroDate.innerHTML = getDay();
+// heroDate.innerHTML = getDay();
+console.log(getDay());
