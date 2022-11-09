@@ -4,9 +4,13 @@ const infoP = document.querySelector(".info-p");
 const aboutInfo = document.querySelector(".about-text");
 hiddenP.hidden = true;
 let showPara = () => {
-  hiddenP.hidden = false;
-  readBtn.style.marginTop = "1rem";
-  removeEventListener;
+  if (hiddenP.hidden === true) {
+    hiddenP.hidden = false;
+    readBtn.innerHTML = "Hide More";
+  } else {
+    hiddenP.hidden = true;
+    readBtn.innerHTML = "Read More";
+  }
 };
 
 readBtn.addEventListener("click", showPara);
